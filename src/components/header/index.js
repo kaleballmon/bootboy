@@ -1,7 +1,22 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import { Link } from 'gatsby';
 import styles from './styles.module.css';
+const pathMap = {
+	'/': 'portfolio',
+	'/info': 'info',
+	'/vision': 'vision',
+}
 
 export default () => {
+	useEffect(() => {
+		document.getElementById(
+			pathMap[window.location.pathname]
+			).style.color = 'black';
+		document.getElementById(
+			pathMap[window.location.pathname]
+			).style.textDecoration = 'underline';
+	});
+
 	return (
 		<header className={ styles.header }>
 			<span>
@@ -9,17 +24,19 @@ export default () => {
 				{' '}
 				+1(225)603-6585
 				{' '}
-				<a className={ styles.blueLink } href='mailto:bootboyphotos@gmail.com'>
+				<a className={ styles.link } href='mailto:bootboyphotos@gmail.com'>
 					bootboyphotos@gmail.com
 				</a>
 			</span>
 			<br />
-			<span className={ styles.topRow }>
-				Portfolio
+			<span>
+				<Link id='portfolio' className={ styles.link } to='/'>Portfolio</Link>
 				{', '}
-				Info
+				<Link id='info' className={ styles.link } to='/info'>Info</Link>
 				{', '}
-				<a className={ styles.blueLink } href='http://www.instagran.com/bootboyphotos/'>Instagram</a>
+				<a className={ styles.link } href='http://www.instagran.com/bootboyphotos/' target='_blank'>Instagram</a>
+				{', '}
+				<Link id='vision' className={ styles.link } to='/vision'>Vision Board</Link>
 			</span>
 		</header>
 	)

@@ -1,7 +1,26 @@
-.blueLink, .blueLink:visited, .blueLink:hover, .blueLink:active {
+@import url("https://use.typekit.net/bnk6tap.css");
+
+.link, .link:visited, .link:active {
 	color: blue;
+	text-decoration: none;
+}
+
+.link:hover {
+	text-decoration: underline;
 }
 
 .header {
+	font-family: courier-std, monospace;
+	font-weight: 400;
 	font-size: 12px;
+	letter-spacing: 1px;
+	font-style: normal;	
+	line-height: 1.2em;
+	padding: .5rem;
+}
+
+@media (min-width: 400px) {
+	.header {
+		font-size: 18px;
+	}
 }
