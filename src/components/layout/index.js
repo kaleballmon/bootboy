@@ -6,7 +6,9 @@ export default ({ children }) => {
 	return (
 		<div className={styles.body}>
 			<Header />
-			{ children }
+			<div className={styles.content}>
+				{ children }
+			</div>
 		</div>
 	)
 }

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'gatsby';
 import styles from './styles.module.css';
 const pathMap = {
@@ -34,7 +34,7 @@ export default () => {
 				{', '}
 				<Link id='info' className={ styles.link } to='/info'>Info</Link>
 				{', '}
-				<a className={ styles.link } href='http://www.instagran.com/bootboyphotos/' target='_blank'>Instagram</a>
+				<a className={ styles.link } href='http://www.instagran.com/bootboyphotos/' target='_blank' rel="noreferrer">Instagram</a>
 				{', '}
 				<Link id='vision' className={ styles.link } to='/vision'>Vision Board</Link>
 			</span>

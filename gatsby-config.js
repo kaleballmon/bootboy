@@ -1,6 +1,16 @@
+require("dotenv").config({ path: __dirname + "/.env" }) // delete when deploying
+
 module.exports = {
   siteMetadata: {
-    title: "bootboy",
+    title: 'Boot Boy',
   },
-  plugins: [],
+  plugins: [
+		{
+			resolve: 'gatsby-source-contentful',
+			options: {
+				spaceId: process.env.SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+			},
+		}
+	],
 };

@@ -1,0 +1,19 @@
+.roulette {
+	margin-bottom: 110px;
+}
+
+.roulette:hover {
+	cursor: pointer;
+}
+
+.photo {
+	display: none;
+	max-height: 600px;
+	max-width: 1000px;
+}
+
+.shootName {
+	margin: 0;
+	padding-top: 5px;
+	font-size: 17px;
+}
