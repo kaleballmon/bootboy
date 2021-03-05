@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "gatsby": "^2.32.8",
+    "gatsby": "^2.32.9",
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-source-contentful": "^5.0.0",
     "p5": "^1.2.0",
