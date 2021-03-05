@@ -18,7 +18,7 @@ class MovingPicture extends React.Component {
 		let dim = 250;
 
 		p.preload = () => {
-			img = p.loadImage('//images.ctfassets.net/ddev62gqtl8k/51U41jFHElpar3XFGhHO14/97dc3232fd63928e0f04b6e9538ec70e/joegrandboy_x_ten_hin-04.jpg');
+			img = p.loadImage(this.props.src);
 		}
 		
 		p.setup = () => {

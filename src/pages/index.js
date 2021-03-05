@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Roulette from '../components/roulette';
-import { graphql } from 'gatsby';
 
 export default ({ data }) => {
 	const shoots = data.allContentfulShoot.edges;
