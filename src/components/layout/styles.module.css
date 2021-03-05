@@ -1,22 +1,24 @@
 @import url("https://use.typekit.net/bnk6tap.css");
 
 .body {
-	font-family: courier-std, monospace;
-	font-weight: 400;
-	font-size: 12px;
-	font-style: normal;	
-	margin: 24px;
+  font-family: courier-std, monospace;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  margin: 24px;
 }
 
-.body a, .body a:visited, .body a:active {
-	color: blue;
-	text-decoration: none;
+.body a,
+.body a:visited,
+.body a:active {
+  color: blue;
+  text-decoration: none;
 }
 
 .body a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .content {
-	margin-top: 110px;
+  margin-top: 110px;
 }

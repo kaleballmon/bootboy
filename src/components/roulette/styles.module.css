@@ -1,19 +1,29 @@
-.roulette {
-	margin-bottom: 110px;
+.button {
+  padding: 0;
+  border: none;
+  background: none;
 }
 
-.roulette:hover {
-	cursor: pointer;
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.roulette {
+  margin-bottom: 110px;
 }
 
 .photo {
-	display: none;
-	max-height: 600px;
-	max-width: 1000px;
+  display: none;
+  max-height: 600px;
+  max-width: 1000px;
 }
 
 .shootName {
-	margin: 0;
-	padding-top: 5px;
-	font-size: 17px;
+  margin: 0;
+  padding-top: 5px;
+  font-size: 17px;
 }

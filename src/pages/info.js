@@ -1,27 +1,32 @@
-import React from 'react';
-import Layout from '../components/layout';
-import showdown from 'showdown';
+import React from "react";
+import Layout from "../components/layout";
+import showdown from "showdown";
+import { Helmet } from "react-helmet";
+import { graphql } from "gatsby";
+
 const converter = new showdown.Converter();
-function createMarkup(m) {
-  return {__html: m};
-}
+const createMarkup = (m) => ({ __html: m });
+
 export default ({ data }) => {
   return (
-		<Layout>
-			<div 
-				dangerouslySetInnerHTML={
-					createMarkup(converter.makeHtml(data.contentfulInfoContentTextNode.content))
-				} 
-				style={{fontSize: '17px'}}
-			/>
-		</Layout>
-	)
-}
+    <Layout>
+      <Helmet>
+        <title>BOOT BOY INFO</title>
+      </Helmet>
+      <div
+        dangerouslySetInnerHTML={createMarkup(
+          converter.makeHtml(data.contentfulInfoContentTextNode.content)
+        )}
+        style={{ fontSize: "17px" }}
+      />
+    </Layout>
+  );
+};
 
 export const query = graphql`
-	query {
-		contentfulInfoContentTextNode {
-			content
-		}
-	}
-`
+  query {
+    contentfulInfoContentTextNode {
+      content
+    }
+  }
+`;
