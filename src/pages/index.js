@@ -11,9 +11,9 @@ export default ({ data }) => {
       <Helmet>
         <title>BOOT BOY</title>
       </Helmet>
-      {shoots.map((node) => (
-        <Roulette key={node.node.id} node={node.node} />
-      ))}
+			{shoots.map((node) => (
+				<Roulette key={node.node.id} node={node.node} />
+			))}
     </Layout>
   );
 };
@@ -24,7 +24,9 @@ export const query = graphql`
       edges {
         node {
           id
+					embedLinks
           name
+					nameLink
           photos {
             id
             file {

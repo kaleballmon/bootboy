@@ -5,7 +5,7 @@
   font-weight: 400;
   font-size: 12px;
   font-style: normal;
-  margin: 24px;
+  margin: 12px;
 }
 
 .body a,
@@ -20,5 +20,11 @@
 }
 
 .content {
-  margin-top: 110px;
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 400px) {
+	.body {
+		margin: 24px;
+	}
 }
