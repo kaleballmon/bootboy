@@ -5,7 +5,7 @@ export default ({src}) => (
 					allow="encrypted-media *;" 
 					width="100%" 
 					height="300rem" 
-					frameborder="0" 
+					frameBorder="0" 
 					src={src}>
 				</iframe>
 )

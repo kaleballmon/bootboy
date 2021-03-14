@@ -19,7 +19,6 @@ export default ({ node }) => {
     };
   }, [index, node.photos]);
 	
-	console.log(node.embdedLinks)
   return (
     <div className={styles.roulette}>
 			<div className={styles.shoot}> 
@@ -37,9 +36,7 @@ export default ({ node }) => {
 				<p className={styles.shootName}>{node.name}</p>
 			</div>
 			<div className={styles.embeddedMusic}>
-				<CustomIFrame src="https://embed.music.apple.com/us/playlist/desean/pl.u-d2b0lzBFMoDy1B9" />
-				<CustomIFrame src="https://open.spotify.com/embed/artist/64VvC9AGQYcX1uiaDInCQm" />
-				<CustomIFrame src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1223345128&color=%2365f512&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
+				{node.embedLinks && node.embedLinks.map(src => <CustomIFrame src={src} />)}
     	</div>
 		</div>
   );
