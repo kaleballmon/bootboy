@@ -45,10 +45,17 @@
 	overflow: auto;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
+	.button {
+		height: 22.5rem; 
+	}
+	
+	.shootName {
+		font-size: 1.5em;
+	}
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
 
 	.button {
 		height: 30rem;
@@ -66,7 +73,4 @@
 		width: 60%;
 	}
 
-	.shootName {
-		font-size: 18px;
-	}
 }

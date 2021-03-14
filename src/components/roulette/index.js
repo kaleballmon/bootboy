@@ -33,10 +33,10 @@ export default ({ node }) => {
 						/>
 					))}
 				</button>
-				{node.nameLink ? <a href={node.nameLink} target='_blank'><p className={styles.shootName}>{node.name}</p></a> : <p className={styles.shootName}>{node.name}</p>}
+				{node.nameLink ? <a href={node.nameLink} rel="noreferrer" target='_blank'><p className={styles.shootName}>{node.name}</p></a> : <p className={styles.shootName}>{node.name}</p>}
 			</div>
 			<div className={styles.embeddedMusic}>
-				{node.embedLinks && node.embedLinks.map(src => <CustomIFrame src={src} />)}
+				{node.embedLinks && node.embedLinks.map(src => <CustomIFrame key={src} src={src} />)}
     	</div>
 		</div>
   );

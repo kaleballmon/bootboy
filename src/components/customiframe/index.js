@@ -4,6 +4,7 @@ import styles from './styles.module.css'
 export default ({src}) => (
 				<iframe 
 					className={styles.embedded}
+					title='src'
 					allow="encrypted-media *;" 
 					width="99%" 
 					height="300rem" 

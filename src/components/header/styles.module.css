@@ -1,10 +1,10 @@
 .header {
-  line-height: 30px;
-  letter-spacing: 1px;
+  line-height: 2rem;
+  letter-spacing: .05em;
 }
 
 @media (min-width: 400px) {
   .header {
-    font-size: 17px;
+    font-size: 1.5em;
   }
 }
