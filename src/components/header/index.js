@@ -9,12 +9,14 @@ const pathMap = {
 
 export default () => {
   useEffect(() => {
-    document.getElementById(pathMap[window.location.pathname]).style.color =
-      "black";
-    document.getElementById(
-      pathMap[window.location.pathname]
-    ).style.textDecoration = "underline";
-  });
+		if (typeof window !== 'undefined') {
+			document.getElementById(pathMap[window.location.pathname]).style.color =
+				"black";
+			document.getElementById(
+				pathMap[window.location.pathname]
+			).style.textDecoration = "underline";
+		}
+	});
 
   return (
     <header className={styles.header}>
