@@ -33,7 +33,7 @@ export default ({ node }) => {
 						/>
 					))}
 				</button>
-				<p className={styles.shootName}>{node.name}</p>
+				{node.nameLink ? <a href={node.nameLink} target='_blank'><p className={styles.shootName}>{node.name}</p></a> : <p className={styles.shootName}>{node.name}</p>}
 			</div>
 			<div className={styles.embeddedMusic}>
 				{node.embedLinks && node.embedLinks.map(src => <CustomIFrame src={src} />)}

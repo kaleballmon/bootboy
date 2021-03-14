@@ -15,7 +15,7 @@ class MovingPicture extends React.Component {
     let dirx = speed * p.cos(angle);
     let diry = speed * p.sin(angle);
     let img;
-    let dim = 250;
+    let dim = p.windowHeight / 5;
 
     p.preload = () => {
       img = p.loadImage(this.props.src);
