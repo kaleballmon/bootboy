@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 
 export default ({ data }) => {
-  console.log(data);
   return (
     <Layout>
       <Helmet>
