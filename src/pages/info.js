@@ -4,11 +4,12 @@ import showdown from "showdown";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 
-const converter = new showdown.Converter();
-const createMarkup = (m) => ({ __html: m });
 
 export default ({ data }) => {
-  return (
+	const converter = new showdown.Converter();
+	const createMarkup = (m) => ({ __html: m });
+  
+	return (
     <Layout>
       <Helmet>
         <title>BOOT BOY INFO</title>
