@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import styles from "./styles.module.css";
 
-export default ({pageId}) => {
-	const [page, setPage] = useState();
-	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			setPage(window.location.pathname.replaceAll("/",''));
-		}
-	});
+export default ({ pageId }) => {
+  const [page, setPage] = useState();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setPage(window.location.pathname.replaceAll("/", ""));
+    }
+  });
   return (
     <header className={styles.header}>
       <span>
@@ -18,12 +18,24 @@ export default ({pageId}) => {
         </a>
       </span>
       <br />
-			<span>
-        <Link style={page === '' ? {color: 'black', textDecoration: 'underline'} : {}} to="/">
+      <span>
+        <Link
+          style={
+            page === "" ? { color: "black", textDecoration: "underline" } : {}
+          }
+          to="/"
+        >
           Portfolio
         </Link>
         {", "}
-        <Link style={page === 'info' ? {color: 'black', textDecoration: 'underline'} : {}} to="/info">
+        <Link
+          style={
+            page === "info"
+              ? { color: "black", textDecoration: "underline" }
+              : {}
+          }
+          to="/info"
+        >
           Info
         </Link>
         {", "}
@@ -36,7 +48,14 @@ export default ({pageId}) => {
           Instagram
         </a>
         {", "}
-        <Link style={page === 'vision' ? {color: 'black', textDecoration: 'underline'} : {}} to="/vision">
+        <Link
+          style={
+            page === "vision"
+              ? { color: "black", textDecoration: "underline" }
+              : {}
+          }
+          to="/vision"
+        >
           Vision Board
         </Link>
       </span>

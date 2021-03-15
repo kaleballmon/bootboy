@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import Roulette from "../components/roulette";
-import Header from "../components/header"
+import Header from "../components/header";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 

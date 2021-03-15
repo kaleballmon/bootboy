@@ -5,13 +5,11 @@ import Header from "../components/header";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 
-
 const converter = new showdown.Converter();
 const createMarkup = (m) => ({ __html: m });
 
 const Info = ({ data }) => {
-  
-	return (
+  return (
     <Layout>
       <Helmet>
         <title>BOOT BOY INFO</title>

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 import { Helmet } from "react-helmet";
-import Header from "../../components/header"
+import Header from "../../components/header";
 import faviconApple from "../../static/favicon/apple-touch-icon.png";
 import favicon32 from "../../static/favicon/favicon-32x32.png";
 import favicon16 from "../../static/favicon/favicon-16x16.png";
@@ -22,7 +22,7 @@ export default ({ children }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Helmet>
-			<Header />
+      <Header />
       <div className={styles.content}>{children}</div>
     </div>
   );
