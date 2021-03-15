@@ -1,13 +1,15 @@
 import React from "react";
 import Layout from "../components/layout";
 import showdown from "showdown";
+import Header from "../components/header";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 
 
-export default ({ data }) => {
-	const converter = new showdown.Converter();
-	const createMarkup = (m) => ({ __html: m });
+const converter = new showdown.Converter();
+const createMarkup = (m) => ({ __html: m });
+
+const Info = ({ data }) => {
   
 	return (
     <Layout>
@@ -23,6 +25,8 @@ export default ({ data }) => {
     </Layout>
   );
 };
+
+export default Info;
 
 export const query = graphql`
   query {

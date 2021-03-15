@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import MovingPicture from "../components/movingpicture";
+import Header from "../components/header";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 
