@@ -58,6 +58,15 @@ export default ({ pageId }) => {
         >
           Vision Board
         </Link>
+        {", "}
+        <a
+          className={styles.link}
+          href="https://bootboyphotos.darkroom.tech"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Store
+        </a>
       </span>
     </header>
   );
