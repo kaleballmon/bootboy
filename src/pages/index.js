@@ -25,9 +25,7 @@ export const query = graphql`
       edges {
         node {
           id
-          embedLinks
           name
-          nameLink
           photos {
             id
             file {
